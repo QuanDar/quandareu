@@ -1,0 +1,94 @@
+header {
+    background-color: #f7f7f7;
+    padding: 50px 0 30px 0;
+}
+
+.wrapper{
+    padding: 60px 0 15px 0;
+}
+
+.wrapper-inv {
+    background-color: #f7f7f7;
+}
+
+h1, h2 {
+    font-weight: 400;
+    color: var(--head-color);
+    float: none
+}
+
+h4 {
+    font-weight: 400;
+    color: var(--head-color);
+    float: none
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+
+button {
+    margin: 0 2px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    p {
+        font-size: 1rem;
+    }
+    header p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+ }
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    p {
+        font-size: 1rem;
+    }
+    header p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    p {
+        font-size: 1rem;
+    }
+    header p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 940px) { 
+    p {
+        font-size: 1.1rem;
+    }
+    header p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    p {
+        font-size: 1.2rem;
+       
+    }
+    header p {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    
+    
+}
+
+

@@ -1,0 +1,205 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "7de9371fee0722e96ab6b5cffcbc1db888635860"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "quaneu.datalayer/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "7.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "5.0.1",
+          "FluentValidation.AspNetCore": "8.0.100",
+          "Microsoft.NETCore.App": "2.2.0-preview2-26905-02"
+        },
+        "runtime": {
+          "quaneu.datalayer.dll": {}
+        }
+      },
+      "AutoMapper/7.0.1": {
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/AutoMapper.dll": {
+            "assemblyVersion": "7.0.1.0",
+            "fileVersion": "7.0.1.0"
+          }
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/5.0.1": {
+        "dependencies": {
+          "AutoMapper": "7.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "5.0.1.0"
+          }
+        }
+      },
+      "FluentValidation/8.0.100": {
+        "dependencies": {
+          "System.ComponentModel.Primitives": "4.3.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.100.0"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/8.0.100": {
+        "dependencies": {
+          "FluentValidation": "8.0.100"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.100.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.App/2.2.0-preview2-26905-02": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostPolicy": "2.2.0-preview2-26905-02",
+          "Microsoft.NETCore.Platforms": "2.2.0-preview2-26905-02",
+          "Microsoft.NETCore.Targets": "2.0.0",
+          "NETStandard.Library": "2.0.3"
+        }
+      },
+      "Microsoft.NETCore.DotNetAppHost/2.2.0-preview2-26905-02": {},
+      "Microsoft.NETCore.DotNetHostPolicy/2.2.0-preview2-26905-02": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostResolver": "2.2.0-preview2-26905-02"
+        }
+      },
+      "Microsoft.NETCore.DotNetHostResolver/2.2.0-preview2-26905-02": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "2.2.0-preview2-26905-02"
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.2.0-preview2-26905-02": {},
+      "Microsoft.NETCore.Targets/2.0.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0-preview2-26905-02"
+        }
+      },
+      "System.ComponentModel/4.3.0": {},
+      "System.ComponentModel.Primitives/4.3.0": {
+        "dependencies": {
+          "System.ComponentModel": "4.3.0"
+        }
+      },
+      "System.ValueTuple/4.5.0": {}
+    }
+  },
+  "libraries": {
+    "quaneu.datalayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AutoMapper/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6xHbhsW09sWjjYuE1sqhYn25PQzB6UEUVPME5uhlaIz2NR2+L3+FGbVxvknJKug1BLp6VTLxDb5RcGXKMm0ieQ==",
+      "path": "automapper/7.0.1",
+      "hashPath": "automapper.7.0.1.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7MIq6D/ax3964iHXbL1L2ldUvl6IlKp0p1GZFzr6vlIhEVyp4CgJwOpisRLvIO7dP+kDtbY3Hb9yuPNCkfyBFg==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/5.0.1",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.5.0.1.nupkg.sha512"
+    },
+    "FluentValidation/8.0.100": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kGyYfxWWsLawTXnPrZ6l82Mqe7n3gHoFDqPalrCzpsqzDP6Jthx8gnMvSrcsaDeeEpR6i6SRsWdX4NxQtIKd+Q==",
+      "path": "fluentvalidation/8.0.100",
+      "hashPath": "fluentvalidation.8.0.100.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/8.0.100": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VpzvmVZbmcDVomIsf8OhOR+CHKOUUk5q0nZo+dQjKfJeoIhMMDmQvf8pD9eKCy67JsfXZWhGBWWuRlULl60d2Q==",
+      "path": "fluentvalidation.aspnetcore/8.0.100",
+      "hashPath": "fluentvalidation.aspnetcore.8.0.100.nupkg.sha512"
+    },
+    "Microsoft.NETCore.App/2.2.0-preview2-26905-02": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gChSBnz68z95HVKN9JetN2Z2DqVpmttJvjJwl4fE1Q/YZMi2EBby3zBIQLHxi4Od7Lsumu0BGj5aCqCTuUi2rg==",
+      "path": "microsoft.netcore.app/2.2.0-preview2-26905-02",
+      "hashPath": "microsoft.netcore.app.2.2.0-preview2-26905-02.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetAppHost/2.2.0-preview2-26905-02": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CZVhG9bBEaNNReL4n6Tz1TEPHA45Wj3KL9piNp3Uig7ytKywli4RPD3cMMgoYEepITwHbFC9rgL1fWMHE9k3sg==",
+      "path": "microsoft.netcore.dotnetapphost/2.2.0-preview2-26905-02",
+      "hashPath": "microsoft.netcore.dotnetapphost.2.2.0-preview2-26905-02.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetHostPolicy/2.2.0-preview2-26905-02": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JjCt1kjLo/jBRk8YiJqdAwG3JMdQwhgR86RUOeAVg/RdFAYmsA5GLsmD0uwfRvnCmzXdgaDNn6iAjQyaq7bU+w==",
+      "path": "microsoft.netcore.dotnethostpolicy/2.2.0-preview2-26905-02",
+      "hashPath": "microsoft.netcore.dotnethostpolicy.2.2.0-preview2-26905-02.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetHostResolver/2.2.0-preview2-26905-02": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TMDuiZaWEZHHzJMCE2wLg97oZNZSBC9tVE/dMptUlpFdlfa60+XrEpNdiesGMEFtZ3uU+Rmmw5/pkjMmHd8GVg==",
+      "path": "microsoft.netcore.dotnethostresolver/2.2.0-preview2-26905-02",
+      "hashPath": "microsoft.netcore.dotnethostresolver.2.2.0-preview2-26905-02.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/2.2.0-preview2-26905-02": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uo3E4hCRGKQknnWeGcRMvlL+7wEjaYgpXnjGgd8Sbjw76X9chIwQ/MMtiBe/WYvBzR0Iy+sA5ItwyAdrBbnmUg==",
+      "path": "microsoft.netcore.platforms/2.2.0-preview2-26905-02",
+      "hashPath": "microsoft.netcore.platforms.2.2.0-preview2-26905-02.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-odP/tJj1z6GylFpNo7pMtbd/xQgTC3Ex2If63dRTL38bBNMwsBnJ+RceUIyHdRBC0oik/3NehYT+oECwBhIM3Q==",
+      "path": "microsoft.netcore.targets/2.0.0",
+      "hashPath": "microsoft.netcore.targets.2.0.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "System.ComponentModel/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "path": "system.componentmodel/4.3.0",
+      "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "path": "system.componentmodel.primitives/4.3.0",
+      "hashPath": "system.componentmodel.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xZtSZNEHGa+tGsKuP4sh257vxJ/yemShz4EusmomkynMzuEDDjVaErBNewpzEF6swUgbcrSQAX3ELsEp1zCOwA==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
+    }
+  }
+}

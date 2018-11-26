@@ -1,0 +1,150 @@
+header {
+    background-color: #f7f7f7;
+    padding: 50px 0 30px 0;
+}
+
+
+
+.wrapper{
+    padding: 60px 0 15px 0;
+}
+
+.wrapper-inv {
+    background-color: #f7f7f7;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+.recent-project{
+    text-align: center;
+}
+
+button {
+    margin: 0 2px;
+}
+
+/* pricing tables */
+.pricing-tble{
+    background-color: #f7f7f7;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.pricing-tble main {
+}
+
+.pricing-tble ul i {
+    color: green;
+}
+
+.pricing-tble .pricing-tble-item .price h5 {
+    font-size: 2.5erm;
+    font-weight: 400;
+}
+
+.pricing-tble .pricing-tble-item button {
+    width: 70%;
+}
+
+.pricing-tble .pricing-tble-item small {
+    padding-top: 7px;
+}
+
+.pricing-tble .pricing-tble-item h4, .pricing-tble .pricing-tble-item h5 {
+    font-weight: 400;
+    color: black;
+    float: none
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    p {
+        font-size: 1rem;
+    }
+    header p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .pricing-tble main {
+        height: 160px;
+    }
+    .pricing-tble .pricing-tble-item header {
+        height: 120px;
+    }
+ }
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    p {
+        font-size: 1rem;
+    }
+    header p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .pricing-tble main {
+        height: 160px;
+    }
+
+    .pricing-tble .pricing-tble-item header {
+        height: 120px;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    p {
+        font-size: 1rem;
+    }
+    header p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .pricing-tble main {
+        height: 300px;
+    }
+    .pricing-tble .pricing-tble-item header {
+        height: 150px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 940px) { 
+    p {
+        font-size: 1.1rem;
+    }
+    header p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .pricing-tble main {
+        height: 190px;
+    }
+    .pricing-tble .pricing-tble-item header {
+        height: 150px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    p {
+        font-size: 1.2rem;
+       
+    }
+    header p {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .pricing-tble main {
+        height: 180px;
+    }
+    .pricing-tble .pricing-tble-item header {
+        height: 150px;
+    }
+}
+
+

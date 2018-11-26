@@ -1,0 +1,12 @@
+#body-content {
+  margin-top: 11vh;
+}
+@media (max-width: 992px) {
+  #body-content {
+    margin-top: 6vh;
+  }
+}
+
+#padding-0{
+  padding: 0;
+}

@@ -1,0 +1,94 @@
+/* colors */
+:root {
+  --head-color: var(--main-color);
+  --main-color: #007bff;
+  --main-color-dark: #1a1a1ae8;
+  --main-inv-color: #007bff71;
+  --main-bg-color-dark: #1a1c20;
+  --main-bg-color-dark-light: #333333;
+  --main-bg-color: #007bff;
+  --main-bg-color-hover: white;
+  --text-inv-color: white;
+
+  /*text*/
+  --text-light-dark: #747474;
+}
+
+/* heading */
+
+h4{
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+  color: var(--head-color);
+  float: none
+}
+
+/* You can add global styles to this file, and also import other style files */
+.no-pad{
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+
+
+.main-background-color{
+  background-color: #007bff;
+  color: white;
+}
+
+.row.no-pad {
+  margin-right:0;
+  margin-left:0;
+}
+.row.no-pad > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+.standard-row-padding{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+/* container width */
+/* large screens */
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .container {
+    max-width: 1400px;
+  } 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .container {
+    max-width: 1400px;
+  }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* change this, by default 960px */
+  .container {
+    max-width: 1400px;
+  }
+  li {
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  li {
+    font-size: 1.2rem;
+  }
+ }

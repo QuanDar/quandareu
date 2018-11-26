@@ -1,0 +1,78 @@
+<div class="main-nav">
+       <!-- 
+  <a style="position: absolute; padding-top: 3vh; padding-left: 1vh" class='navbar-brand' [routerLink]='["/"]'>quandareu_cs_angular</a>
+    -->
+  <nav class="navbar navbar-expand-lg navbar-dark" id="nav-top">
+    <a class='navbar-brand' [routerLink]='["/"]'></a>
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item" [routerLinkActive]='["link-active"]'>
+        <a class="nav-link" [routerLink]='["/contact"]' (click)='collapse()'>
+          Contact
+        </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]='["link-active"]'>
+        <a class="nav-link" [routerLink]='["/login"]' (click)='collapse()'>
+          Login
+        </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]='["link-active"]'>
+        <a class="nav-link" [routerLink]='["/register"]' (click)='collapse()'>
+          Register
+        </a>
+      </li>
+    </ul>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar2">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark" id="nav-bot">
+    <!-- 
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    -->
+    <a class='navbar-brand' [routerLink]='["/"]'>QuanWebb</a>
+    
+    <div class="collapse navbar-collapse" id="navbar2">
+      <ul class="navbar-nav">
+        <li class="nav-item" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+          <a class="nav-link" [routerLink]='["/"]' (click)='collapse()'>
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <a class="nav-link" [routerLink]='["/themes"]' (click)='collapse()'>
+            Themes
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <a class="nav-link" [routerLink]='["/webdevelopment"]' (click)='collapse()'>
+            Website bestellen
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <a class="nav-link" [routerLink]='["/webdesign"]' (click)='collapse()'>
+            Webdesign
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <a class="nav-link" [routerLink]='["/webstructuur"]' (click)='collapse()'>
+            Webstructuur &amp; Usability
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <a class="nav-link" [routerLink]='["/zoekmachine-optimalisatie"]' (click)='collapse()'>
+            SEO
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <a class="nav-link" [routerLink]='["/blog"]' (click)='collapse()'>
+            Blog &amp; Tutorials
+          </a>
+        </li>
+
+
+      </ul>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,80 @@
+<div class="container">
+  <h2>Reacties</h2>
+  <div class="row">
+    <div class="col-md-7 col-xs-12">
+      <div *ngFor="let comment of comments" class="comment">
+        <div class="responseBody" *ngIf="comment.parentCommentId == 0">
+          <header class="reactieHeader">
+            <div class="d-flex align-items-center">
+              <i class="userThumbNail fas fa-user"></i>
+              <a href="#" class="userName" rel="nofollow">
+                {{ comment.userName }}
+              </a>
+            </div>
+            <small class="date" rel="nofollow">
+              {{ comment.addDate }}
+            </small>
+          </header>
+          <main>
+            <p class="reactieContent">
+              {{ comment.commentText }}
+            </p>
+          </main>
+          <footer>
+            <a href="" onClick="document.getElementById('response').scrollIntoView(); return false;" (click)="replyButtonClick(comment.commentId)"
+              class="replyButton">
+              Reageer
+            </a>
+          </footer>
+        </div>
+        <div>
+          <div *ngFor="let reply of comments" class="comment">
+            <div *ngIf="reply.parentCommentId > 0 && comment.commentId == reply.parentCommentId" class="reply">
+              <div class="responseBody">
+                <header class="reactieHeader">
+                  <h1>
+                    {{ reply.commentId }}
+                  </h1>
+                  <div class="d-flex align-items-center">
+                    <i class="userThumbNail fas fa-user"></i>
+                    <a href="#" class="userName">
+                      <span>
+                        {{ reply.userName }}
+                      </span>
+                    </a>
+                  </div>
+                  <small class="date" rel="nofollow">
+                    {{ reply.addDate }}
+                  </small>
+                </header>
+                <main>
+                  <p class="reactieContent">
+                    {{ comment.commentText }}
+                  </p>
+                </main>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7" id="response">
+      <header>
+        <h3>Reageer</h3>
+      </header>
+      <main>
+        <textarea #commentText placeholder="Voer hier uw reactie in"></textarea>
+      </main>
+      <footer>
+        <button (click)="addCommentButtonClick(commentText.value)" class="btn btn-primary">
+          Plaats Reactie
+        </button>
+        <button [style.display]="isVisible ? 'block' : 'none'" #cancelReplyButton (click)="cancelReplyButtonClick()" class="btn btn-secondary">
+          Annuleer reageren op bericht
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>

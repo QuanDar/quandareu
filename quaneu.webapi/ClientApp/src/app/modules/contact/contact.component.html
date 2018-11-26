@@ -1,0 +1,125 @@
+<app-breadcrumbs></app-breadcrumbs>
+<header class="bg-color">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Contacteer QuanWeb</h1>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="bg-color">
+  <div class="container bg-color">
+    <div class="row">
+      <div class="col-md-7 bg-color">
+        <h3>Contact</h3>
+        <form name="contactForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+          <div class="form-row">
+            <div class="col-md-3 mb-3 ">
+              <label for="firstName">*Voornaam</label>
+              <input type="text" class="form-control" placeholder="Voornaam" [(ngModel)]="model.firstName" name="firstName" #firstName="ngModel"
+                [ngClass]="{ 'is-invalid': contactForm.submitted && firstName.invalid, 'is-valid': firstName.valid }" required>
+              <div *ngIf="contactForm.submitted && firstName.invalid; else validFirstName" class="invalid-feedback">
+                <div *ngIf="firstName.errors.required">Vul een geldige voornaam in</div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="lastName">*Achternaam</label>
+              <input type="text" class="form-control" placeholder="Achternaam" [(ngModel)]="model.lastName" name="lastName" #lastName="ngModel"
+                [ngClass]="{ 'is-invalid': contactForm.submitted && lastName.invalid, 'is-valid': lastName.valid }" required>
+              <div class="invalid-feedback">
+                Vul een geldige achternaam in
+              </div>
+            </div>
+            <div class="col-md-5 mb-3">
+              <label for="emailAddress">*Email</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Email" [(ngModel)]="model.emailAddress" name="emailAddress" #emailAddress="ngModel"
+                  [ngClass]="{ 'is-invalid': contactForm.submitted && emailAddress.invalid, 'is-valid': emailAddress.valid }"
+                  required email>
+                <div class="invalid-feedback">
+                  Vul een geldig email adres in
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-8 mb-3">
+              <label for="localCommunity">Woonplaats gemeente (optioneel)</label>
+              <input type="text" class="form-control" placeholder="Gemeente" [(ngModel)]="model.localCommunity" name="localCommunity" #localCommunity="ngModel"
+                [ngClass]="{ 'is-invalid': contactForm.submitted && localCommunity.invalid, 'is-valid': localCommunity.valid }">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="zipCode">Postcode (optioneel)</label>
+              <input type="text" class="form-control" placeholder="Postcode" [(ngModel)]="model.zipCode" name="zipCode" #zipCode="ngModel"
+                [ngClass]="{ 'is-invalid': contactForm.submitted && zipCode.invalid, 'is-valid': zipCode.valid }">
+            </div>
+          </div>
+
+          <div class="form-row onderwerp">
+            <div class="col-md-12">
+              <label for="subject">*Onderwerp</label>
+              <input type="text" class="form-control" placeholder="Onderwerp" [(ngModel)]="model.subject" name="subject" #subject="ngModel"
+                [ngClass]="{ 'is-invalid': contactForm.submitted && subject.invalid, 'is-valid': subject.valid }" required>
+              <div class="invalid-feedback">
+                Vul een onderwerp in
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-md-12 mb-3">
+              <label for="body">*Bericht</label>
+              <textarea type="text" class="form-control" placeholder="Bericht" [(ngModel)]="model.body" name="body" #body="ngModel" [ngClass]="{ 'is-invalid': contactForm.submitted && body.invalid, 'is-valid': body.valid }"
+                required></textarea>
+              <div class="invalid-feedback">
+                Vul je vraag in
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary">Verstuur je bericht</button>
+          <div #messageSend *ngIf="edited==true" class="alert alert-success alert-dismissible">
+            Je bericht is in goede orde ontvangen. Mocht u binnen 24 uur geen bericht ontvangen. Twijfel dan zeker niet om nogmaals een
+            bericht te sturen.
+          </div>
+          <div *ngIf="res" class="alert alert-danger" role="alert">
+            <strong>Oops!</strong> {{res}}
+          </div>
+        </form>
+      </div>
+      <div class="col-md-5 bg-color">
+        <h3>QuanDar Contact informatie</h3>
+        <ul class="list-unstyled">
+          <li>
+            <i class="fas fa-home"></i>
+            <span>Adres:</span>
+            <br>
+            <a target="_blank" href="https://www.google.nl/maps/place/Elfde-Liniestraat+23,+3500+Hasselt,+Belgium/@50.9378204,5.3478705,17z/data=!3m1!4b1!4m5!3m4!1s0x47c12170c4778d75:0x85800ca4b76e8e48!8m2!3d50.937817!4d5.3500592">Hasselt, Elfde-Liniestraat, Belgie</a>
+            <br>
+            <a target="_blank" href="https://www.google.nl/maps/place/Katwijk+aan+Zee/@52.1941287,4.3730993,13z/data=!3m1!4b1!4m5!3m4!1s0x47c5bf534733663d:0xbb710269cc58aae2!8m2!3d52.1992517!4d4.4114135">Katwijk, Hoorneslaan, Nederland (tijdens schoolvakanties)</a>
+          </li>
+          <br>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>Email:</span>
+            <br>
+            <a href="mailto:fluxwt@gmail.com">FluxWT@gmail.com</a>
+          </li>
+          <br>
+          <li>
+            <i class="fab fa-skype"></i>
+            <span>Skype:</span>
+            <br>
+            <a href="skype:QuanDar?chat">QuanDar</a>
+          </li>
+        </ul>
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </div>
+    </div>
+  </div>
+</main>

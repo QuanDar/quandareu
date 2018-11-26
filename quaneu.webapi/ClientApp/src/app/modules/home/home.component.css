@@ -1,0 +1,209 @@
+.hero-image {
+    background: url("../../../assets/images/BBD-Homepage-Hero-Image-2-1-1.jpg") no-repeat center center ;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 50vh;
+}
+
+.hero-image-layer {
+    background-color: rgba(32, 32, 32, 0.801);
+    width: 100%;
+    height: 100%;
+}
+
+
+.hero .hero-text h2 {
+  color: white;
+}
+
+#opportunities-logos {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+
+
+@media (max-width: 576px) { 
+  .hero-text{
+    padding-top: 5vh;
+  }
+
+  .hero-text h2{
+    font-size: 1.75rem;
+  }
+
+  .hero-text-body {
+    padding-right: 0;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .hero-text{
+    padding-top: 8vh;
+  }
+
+  .hero-text h2{
+    font-size: 2rem;
+  }
+  .hero-text-body {
+    padding-right: 0;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .hero-text{
+    padding-top: 12vh;
+  }
+
+  .hero-text h2{
+    font-size: 2rem;
+  }
+
+  .hero-text-body{
+    padding-right: 0;
+    font-size: 1.2em
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 940px) { 
+  .hero-text{
+    padding-top: 10vh;
+  }
+
+  .hero-text h2{
+    font-size: 2.5rem;
+  }
+
+  .hero-text-body{
+    font-size: 1.2em
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .hero-text{
+    padding-top: 10vh;
+  }
+
+  .hero-text h2{
+    font-size: 2.5rem;
+  }
+
+  .hero-text-body{
+    font-size: 1.3em
+}
+}
+
+.hero-text{
+  color: rgba(255, 255, 255, 0.801);
+  padding-left: 10%;
+  padding-right: 10%
+}
+
+.hero-text-body p {
+  padding: 35px 0 15px 0;
+}
+
+
+.web-info-pick{
+    padding-top:20px;
+}
+
+.btn-style {
+  padding: 15px 15px;
+}
+
+small {
+  padding-left: 10px;
+}
+
+.container-background {
+  background-color: rgb(249, 249, 249);
+}
+
+.container-background-dk {
+  background-color: rgb(245, 245, 245);
+}
+
+.theme-backgrounds {
+  background: url("../../../assets/images/contact-img.jpg") no-repeat center center ;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 20em;
+}
+
+.max-height{
+  height: 100%;
+}
+
+.theme-image-layer {
+  background-color: rgba(32, 32, 32, 0.801);
+}
+
+.contact-text-options{
+  text-align: center;
+}
+
+.contact-text-options h1{
+  color:white;
+}
+.contact-text-options h2{
+  background: rgba(30,187,240,1);
+  background: -moz-linear-gradient(left, rgba(30,187,240,1) 0%, rgba(57,223,170,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(30,187,240,1)), color-stop(100%, rgba(57,223,170,1)));
+  background: -webkit-linear-gradient(left, rgba(30,187,240,1) 0%, rgba(57,223,170,1) 100%);
+  background: -o-linear-gradient(left, rgba(30,187,240,1) 0%, rgba(57,223,170,1) 100%);
+  background: -ms-linear-gradient(left, rgba(30,187,240,1) 0%, rgba(57,223,170,1) 100%);
+  background: linear-gradient(to right, rgba(30,187,240,1) 0%, rgba(57,223,170,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ebbf0', endColorstr='#39dfaa', GradientType=1 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.contact-text-options > * {
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.wordpress-intro{
+  padding: 0 15% 0 15%;
+  text-align: center;
+}
+
+.theme-intro div {
+  padding: 3em 0 3em 0;
+  text-align: center;
+}
+
+.theme-intro hr {
+  width: 120px;
+  height: 1.5px;
+  background-color: white;
+  border: none;
+}
+
+.theme-intro p {
+  font-size: 1.2rem;
+}
+
+.theme-intro h3 {
+  color: white;
+}
+
+.h-wp-templates-item{
+  text-align: center;
+}
+
+.h-wp-templates-item span {
+  font-size: 4em;
+}

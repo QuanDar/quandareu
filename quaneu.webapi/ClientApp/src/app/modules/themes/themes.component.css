@@ -1,0 +1,287 @@
+:root{
+    --height-container: 75vh;
+}
+
+.w-wrapper{
+    background: #ebebeb;
+}
+
+.wp-container {
+    height: 65vh;
+}
+
+.row{
+    height: 100%;
+}
+
+#hero figure {
+    background-position: center !important;
+    background-size: cover !important;
+    height: 100%;
+}
+
+#hero {
+    height: 65vh;
+}
+
+#hero-one, #hero-two, #hero-three, #hero-four, #hero-five{
+overflow: hidden;
+}
+
+
+#hero-one{
+    height: 100%;
+}
+
+#hero-one footer{
+    margin-bottom: 3vh;
+}
+
+#hero-two, #hero-three, #hero-four, #hero-five{
+    height: 50%;
+}
+
+#hero-two footer, #hero-four footer {
+    margin-bottom: 32.7vh;
+}
+
+/* search */
+#search button {
+    border-radius: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 1px 1px;
+}
+
+#search #search-intro {
+    text-align: center;
+}
+
+.outer-div
+{
+  overflow: hidden; 
+}
+.inner-div
+{
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  transition: all 0.5s ease;
+}
+.inner-div:hover
+{
+  transform: scale(1.05);
+}
+
+#search {
+    padding-top: 60px;
+    align-items: center;
+} 
+
+#search p {
+    font-size: 1.2rem;
+}
+
+
+#hero footer{
+    position: absolute;
+    width: 100%;
+    background: rgba(15,15,15,0.78);
+    bottom: -2px;
+    color: #ffffff;
+    display: block;
+}
+
+#hero footer p {
+    line-height: 1.4em;
+    margin: 0;
+    padding-top:6px;
+    font-size: 0.85em;
+}
+
+#hero footer h4{
+    font-family: "Segoe UI Title","Helvetica Neue",sans-serif;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0;
+}
+
+#hero figcaption{
+    padding: 20px 20px 24px 20px;
+    display: block;
+}
+
+
+
+
+
+#main {
+    padding-top: 10px;
+}
+
+/* text link style main (all templates */
+#main a {
+    color: #333333;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+
+}
+
+#main header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 166px;
+}
+
+
+#main header p {
+    font-size: 1em;
+    color: white;
+}
+
+#cat {
+    background-color: rgba(0, 0, 0, 0.801);
+    padding: 10px 5px;
+    color: white;
+    float: left;
+}
+
+#cat li {
+    float: left;
+    list-style-type: none;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 0.8rem;
+
+}
+
+#cat > li + li {
+    border-left: 1px solid white;
+}
+
+
+
+#cat-wrapper{
+    padding-top: 100px;
+    margin-left: -20px;
+}
+
+.ul-templ {
+    list-style: none;
+    padding: 0;
+}
+
+.li-templ {
+    box-sizing: border-box;
+    position: relative;
+    height: 400px;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    background: transparent;
+    overflow: hidden;
+    
+}
+
+.li-templ:hover{
+    background: #f8f8f8;
+    }
+
+
+.li-templ a {
+    height: 100%;
+    padding: 2vh;
+}
+
+#main footer {
+    padding-top: 18px;
+}
+
+#main footer a {
+    padding: 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .li-templ {
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }   
+    #hero {
+        height: 75vh;
+        display: none;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .li-templ {
+        width: 50%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }   
+
+    #search {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    #hero {
+        display: none;
+    }
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .li-templ {
+        width: 50%;
+        padding-right: 25px;
+        padding-left: 25px;
+    } 
+
+    #search {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    #hero {
+        display: block;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 940px) { 
+    .li-templ {
+        width: 33%;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    #search {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .li-templ {
+        width: 33%;
+        padding-right: 30px;
+        padding-left: 30px;
+    } 
+
+    #search {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    #main {
+        max-width: 1700px;
+    }
+}
+
+

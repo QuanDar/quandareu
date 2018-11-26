@@ -1,0 +1,50 @@
+<router-outlet></router-outlet>
+<app-breadcrumbs></app-breadcrumbs>
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-md-3">
+        <h2>categorieën</h2>
+        <div class="sidebar">
+          <ul class="list-group">
+            <li class="list-group-item" [class.active]="allButton" (click)="allCategoryButtonClick()" >
+              Alles
+            </li>
+            <li class="list-group-item" [class.active]="activeCategoryClick==i" *ngFor="let blog of blogs; index as i" (click)="setActiveCategoryClick(i, $event)" (click)="filterPosts($event)">
+              {{ blog.category }}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-8 col-md-9">
+        <h2>Topics</h2>
+        <div class="row">
+          <article *ngFor="let post of postsFiltered" id="post-77028" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+            <div class="related-stories-item__inner">
+              <a [routerLink]="['post', post.id]" aria-label="Microsoft improves facial recognition technology to perform well across all skin tones, genders">
+                <img [src]='post.image.url' class="img-fluid c-image wp-post-image" alt="Two women outdoors looking at a mobile device using facial recognition technology."
+                  title="Microsoft improves facial recognition technology to perform well across all skin tones, genders" aria-label="Two women outdoors looking at a mobile device using facial recognition technology.">
+              </a>
+
+              <div class="content">
+                <h5 class="c-heading c-glyph glyph-chevron-right">
+                  <a [routerLink]="['post', post.id]">Microsoft improves facial recognition technology to perform well across all skin tones, genders</a>
+                </h5>
+                <p>
+                  {{ post.description }}
+                </p>
+              </div>
+
+              <time class="date c-paragraph" aria-label="June 26, 2018" datetime="2018-06-26">
+                <span aria-hidden="true">{{ post.creationDate }}</span>&nbsp;
+              </time>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

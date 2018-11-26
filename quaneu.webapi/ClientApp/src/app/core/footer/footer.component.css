@@ -1,0 +1,14 @@
+
+
+footer {
+  background: #1a1c20 none repeat center top;
+  color: white;
+}
+
+footer i {
+  padding-right: 7px;
+}
+
+footer li {
+  font-size: 1rem;
+}

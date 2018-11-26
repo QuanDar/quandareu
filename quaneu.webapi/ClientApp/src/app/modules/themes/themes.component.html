@@ -1,0 +1,159 @@
+<div class="w-wrapper">
+  <div class="container-fluid" id="hero">
+    <div class="row no-gutters no-pad">
+      <div class="col-md-6">
+        <div id="hero-one">
+          <a class="outer-div">
+            <figure class="inner-div" [style.background]="'url('+wordpressTemplateOne.image.url+')'"></figure>
+            <footer>
+              <figcaption>
+                <h4>Explanimators</h4>
+                <p>The animated guide to the intelligent edge.</p>
+                <!-- 
+                  <a href="#">Lees meer
+                    <i class="fas fa-arrow-circle-right"></i>
+                  </a>
+                -->
+              </figcaption>
+            </footer>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div id="hero-two">
+          <a class="outer-div">
+            <figure class="inner-div" [style.background]="'url('+wordpressTemplateTwo.image.url+')'"></figure>
+            <footer class="footer-height">
+              <figcaption>
+                <h4>ewfewrgf</h4>
+                <p>The animated guide to the intelligent edge.
+                  <!-- 
+                    <a href="#">Lees meer
+                      <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                  </p>
+                -->
+
+              </figcaption>
+            </footer>
+          </a>
+        </div>
+        <div id="hero-three">
+          <a class="outer-div">
+            <figure class="inner-div" [style.background]="'url('+wordpressTemplateThree.image.url+')'"></figure>
+            <footer>
+              <figcaption>
+                <h4>Explanimators</h4>
+                <p>The animated guide to the intelligent edge.
+                  <!-- 
+                    <a href="#">Lees meer
+                      <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                -->
+                </p>
+              </figcaption>
+            </footer>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div id="hero-four">
+          <a class="outer-div">
+            <figure class="inner-div" [style.background]="'url('+wordpressTemplateFour.image.url+')'"></figure>
+            <footer>
+              <figcaption>
+                <h4>Explanimators</h4>
+                <p>The animated guide to the intelligent edge.
+                  <!-- 
+                    <a href="#">Lees meer
+                      <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                -->
+                </p>
+              </figcaption>
+            </footer>
+          </a>
+        </div>
+        <div id="hero-five">
+          <a class="outer-div">
+            <figure class="inner-div" [style.background]="'url('+wordpressTemplateFive.image.url+')'"></figure>
+            <footer>
+              <figcaption>
+                <h4>Explanimators</h4>
+                <p>The animated guide to the intelligent edge.
+                  <!-- 
+                    <a href="#">Lees meer
+                      <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                -->
+                </p>
+              </figcaption>
+            </footer>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-breadcrumbs></app-breadcrumbs>
+
+
+  <div class="container" id="search">
+    <div id="search-intro">
+      <h1>
+        1000+ pre-built websites
+      </h1>
+      <p>Uitterraard ga ik hard aan de slag om voor jou een unieke website te maken. Bijna alle websites kunnen uitgerust
+        worden met webshop.
+        Weet je niet zeker welke website uiterlijk je naar op zoek bent? <a [routerLink]='["/contact"]'>Hier</a> kan je mij contacteren, samen kiezen wij het meest geschikte WordPress thema dat bij jouw wensen en doelgroep aansluit.
+      </p>
+    </div>
+    <hr>
+
+    <div class="btn-toolbar d-flex justify-content-center">
+      <button class="btn" [class.btn-primary]="allButton" (click)="allCategoryButtonClick()">
+        Alles
+      </button>
+      <button class="btn" [class.btn-primary]="activeCategoryClick==i" *ngFor="let wpc of wordPressCategories; index as i" (click)="filterTemplates($event)"
+        (click)="setActiveCategoryClick($event, i)">
+        {{ wpc.category }}
+      </button>
+      <button class="btn" [class.btn-primary]="elseButton" (click)="elseCategoryButtonClick()">
+        Anders
+      </button>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text" id="btnGroupAddon">@</div>
+        </div>
+        <input [(ngModel)]="searchText" type="text" class="form-control" placeholder="Filter op alle text" aria-label="Input group example"
+          aria-describedby="btnGroupAddon">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <div id="main" class="">
+      <ul class="ul-templ">
+        <li class="li-templ" *ngFor="let wpt of wordPressTemplatesFiltered | wpTemplCat : searchText">
+          <a class="" href="cloud-security/">
+            <header [style.background]="'url('+wpt.image.url+')'">
+              <div id="cat-wrapper">
+                <ul id="cat">
+                  <li *ngFor="let wptc of wpt['categories']">{{ wptc.category }}</li>
+                </ul>
+              </div>
+            </header>
+            <footer>
+              <h4>{{ wpt.title }}</h4>
+              <p>{{ wpt.description }}</p>
+              <!--
+              <a href="#">Lees meer
+                <i class="fas fa-arrow-circle-right"></i>
+              </a>
+              -->
+            </footer>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

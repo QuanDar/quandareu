@@ -1,0 +1,17 @@
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a [routerLink]="'/'">Home</a></li>
+  <li class="breadcrumb-item"><a [routerLink]="'/blog'">Blog</a></li>
+  <li class="breadcrumb-item"><a [routerLink]="'/blog'">{{ category }}</a></li>
+  <li class="breadcrumb-item active" aria-current="page">{{ post.title }}</li>
+</ol>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>{{ post.title }}</h1>
+      <small>{{ post.creationDate }}</small>
+      <p [innerHTML]="post.content"></p>
+    </div>
+  </div>
+</div>
+<app-comment></app-comment>

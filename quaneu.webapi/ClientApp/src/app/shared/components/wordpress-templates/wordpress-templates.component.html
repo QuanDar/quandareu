@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row no-gutters no-pad">
+        <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3" *ngFor='let wordPressTemplate of wordPressTemplates'>
+            <div class="wpt-container">
+                <figure [style.background]="'url('+wordPressTemplate.image.url+')'" alt="Avatar" class="wpt-image">
+                </figure>
+                <div class="wpt-middle text-center d-flex align-items-center justify-content-center">
+                    <div class="">
+                        <div>
+                            <a [routerLink]="['/contact']">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a [routerLink]="['/contact']">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <h5 class="wpt-text">
+                                {{ wordPressTemplate.title }}
+                            </h5>
+                            <p>
+                                {{ wordPressTemplate.description }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

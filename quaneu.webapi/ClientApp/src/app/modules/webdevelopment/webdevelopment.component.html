@@ -1,0 +1,248 @@
+<app-breadcrumbs></app-breadcrumbs>
+<header class="">
+  <div class="container">
+    <div class="row text-center d-flex justify-content-center">
+      <h1>Een website bestellen</h1>
+      <p>
+        Je bent van plan een nieuwe website te laten maken. Er komt heel wat bij kijken en misschien zie je de bomen door het bos
+        niet meer. Hieronder staan alvast een paar tips om rekening mee te houden. In de sectie
+        <a [routerLink]='["/themes"]'>theme</a> kan je alvast kijken naar meerdere voorbeelden.
+
+      </p>
+
+    </div>
+    <div class="row d-flex justify-content-center">
+      <button [routerLink]='["/contact"]' class="btn btn-primary">JA, IK WIL EEN NIEUWE WEBSITE</button>
+      <button class="btn btn-secondary" onClick="document.getElementById('3').scrollIntoView();">BEKIJK PRIJZEN</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrapper" id="1">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-md-9">
+        <h2>Website laten maken</h2>
+        <h4>WordPress</h4>
+        <p>
+          WordPress is ondertussen het meest populaire Content Management System (CMS) die er is.
+          <a href="#">Het beheer van het dit systeem is zeer gemakkelijk</a>. Het aanpassen van design, text, afbeeldingen en elementen
+          is niet veel moeilijker dan word.
+        </p>
+        <p>
+          Het design is één ding, de
+          <a [routerLink]='["/webstructuur"]'>website structuur</a> blijft een klus voor specialisten om zo'n hoog mogelijk conversie te generen
+        </p>
+
+      </div>
+      <div class="col-md-3">
+        <img alt="wordpress-website-image" class="img-fluid" src="../../../../../assets/images/cloud-image.png">
+      </div>
+    </div>
+
+    <div class="row d-flex align-items-center">
+      <div class="col-md-9 order-md-2">
+        <h4>Custom applicatie</h4>
+        <p>
+          Voor zeer specifieke wensen, zoals uitgebreid custom database, speciale filters, grafieken is wordpress minder geschikt.
+          Een framework zoals angular met ASP.NET Core WEB API is dan een betere keuzen. Projecten zoals deze zijn wel prijzig en duren meerdere maanden.
+        </p>
+        <p>
+          Hiervoor kunt u het beste contact opnemen. Voor 95% van de gevallen is WordPress de betere keuze.
+        </p>
+      </div>
+      <div class="col-md-3 order-md-1">
+        <img alt="custom-website-image" class="img-fluid" src="../../../../../assets/images/custom.png">
+      </div>
+    </div>
+    <div class="row d-flex align-items-center">
+      <div class="col-md-9">
+        <h2>Zelf een website maken</h2>
+        <p>
+          WordPress is eenvoudig. Je kan pagina's maken met een
+          <a></a>page builder zonder enige programmeer kennis. Ik zet de website op, installeer een WordPress theme, importeer
+          proef pagina's, configureer de belangrijke settings en importeer de <a [routerLink]='["/"]'>dummy data</a> in de website.
+        </p>
+        <p>
+          De proefpagina's zijn zeer makkelijk aan te passen. De kleuren van de gehele website ook eenvoudig te regelen met sliders.
+          Daarnaast krijg je van mij belangrijke tips en kan je mijn blog bezoeken voor tutorials.
+        </p>
+        <p>Al voor rond de 175 euro.</p>
+        <button [routerLink]='["/contact"]' class="btn btn-primary">Ja ik wil een website zelf maken</button>
+      </div>
+      <div class="col-md-3">
+        <img alt="wordpress-website-image" class="img-fluid" src="../../../../../assets/images/pagebuilder.gif">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<header class="wrapper-inv">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-12 text-center">
+        <h1>Recente projecten</h1>
+        <p>
+          Zij hebben nu al een website van quancomm.
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrapper-inv">
+  <app-recent-work-full-width></app-recent-work-full-width>
+</div>
+
+<div class="wrapper" id="3">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-md-9">
+        <h4>Budget</h4>
+        <p>
+          Veel mensen steken hun volledige budget in hun website. In sommige gevallen kan dit werken wanneer je veel tijd steekt in
+          marketing, maar vaak ook niet. Wanneer je bijvoorbeeld je nieuwe website met webshop opent is het verstandig om
+          minstens 2/5 van het budget in website promotie te steken. Denk hierbij bijvoorbeeld aan google advertenties.
+        </p>
+        <p>
+          Je website hoeft niet in een keer volledig af te zijn. Als de fundering maar goed is. Daarna is het altijd mogelijk om je
+          website verder uit te breiden indien nodig.
+        </p>
+        <p>
+          Uitterraard zijn er nog veel dingen om hoger te scoren in Google en beter gevonden te worden. Een blog, nieuwe website uitbreidingen, meest gebruikte google zoektermen / trends / keyword in de tekst
+          en social media helpen allemaal om meer bezoekers te generen.
+        </p>
+
+      </div>
+      <div class="col-md-3">
+        <img alt="wordpress-website-image" class="img-fluid" src="../../../../../assets/images/budget.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="3">
+  <div class="row pricing-tble">
+
+  
+    <div class="col-md-4 pricing-tble-item">
+        <header>
+          <div>
+            <h4>Zelfbouw website</h4>
+          </div>
+          <div class="price">
+            <h5 class="">
+                169,95 - 299,95
+              </h5>
+          </div>
+        </header>
+        <main>
+          <ul class="fa-ul">
+            <li><span class="fa-li" ><i class="fas fa-check"></i></span>WordPress, theme en plugins geinstalleerd</li>
+            <li><span class="fa-li" ><i class="fas fa-check"></i></span>Eenvoudig met de uitgebreide pagina builder</li>
+            <li><span class="fa-li" ><i class="fas fa-check"></i></span>Onbeperkt pagina's</li>
+            <li><span class="fa-li" ><i class="fas fa-check"></i></span>Webshop</li>
+            <li><span class="fa-li" ><i class="fas fa-check"></i></span>Icoon met link naar FaceBook, Twitter enzv</li>
+            <li><span class="fa-li" ><i class="fas fa-check"></i></span>Levenslange updates met klik op de knop</li>
+          </ul>
+        </main>
+        <footer class="">
+          <div class="d-flex justify-content-center">
+              <button class="btn btn-primary">Neem contact op</button>
+          </div>
+          <div class="d-flex justify-content-center">
+              <small>Helemaal vrijblijvend</small>
+          </div>
+        </footer>
+      </div>
+
+      <div class="col-md-4 pricing-tble-item">
+          <header>
+            <div>
+              <h4>Kleine-middelgrote site op maat</h4>
+            </div>
+            <div class="price">
+              <h5 class="">
+                  299,95 - 799,95
+                </h5>
+            </div>
+          </header>
+          <main>
+            <ul class="fa-ul">
+              <li><span class="fa-li" ><i class="fas fa-check"></i></span>Alles van het Zelfbouw website en:</li>
+              <li><span class="fa-li" ><i class="fas fa-check"></i></span>Pagina's op maat</li>
+              <li><span class="fa-li" ><i class="fas fa-check"></i></span>Strategisch geplaatste elementen</li>
+              <li><span class="fa-li" ><i class="fas fa-check"></i></span>SEO</li>
+              <li><span class="fa-li" ><i class="fas fa-check"></i></span>Uitbreidingen zoals afspraakplanner en veel meer</li>
+              <li><span class="fa-li" ><i class="fas fa-check"></i></span>Google advertenties (prijs advertenties niet inbegrepen)</li>
+            </ul>
+          </main>
+          <footer class="">
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-primary">Neem contact op</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <small>Helemaal vrijblijvend</small>
+            </div>
+          </footer>
+        </div>
+
+    <div class="col-md-4 pricing-tble-item">
+      <header>
+        <div>
+          <h5>Online verkoop pakket</h5>
+        </div>
+        <div class="price">
+          <h4 class="">
+              499,95 - ...
+          </h4>
+        </div>
+      </header>
+      <main>
+        <ul class="fa-ul">
+          <li><span class="fa-li" ><i class="fas fa-check"></i></span>Inclusief alles van vorige pakketen</li>
+          <li><span class="fa-li" ><i class="fas fa-check"></i></span>Webshop volledig ingericht, met categorieën</li>
+          <li><span class="fa-li" ><i class="fas fa-check"></i></span>Membership management</li>
+          <li><span class="fa-li" ><i class="fas fa-check"></i></span>Ideaal voor die online willen verkopen</li>
+        </ul>
+      </main>
+      <footer class="">
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-primary">Neem contact op</button>
+        </div>
+        <div class="d-flex justify-content-center">
+            <small>Helemaal vrijblijvend</small>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper" id="4">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-md-9">
+        <h2>WordPress uitbreiden</h2>
+        <p>
+          Veel mensen steken hun volledige budget in hun website. In sommige gevallen kan dit werken wanneer je veel tijd steekt in
+          marketing, maar vaak ook niet. De tijd dat je eenvoudig via search engine optimalisation (SEO) je website makkelijk rank 1 kan laten scoren is over. Wanneer je bijvoorbeeld je nieuwe website met webshop opent is het verstandig om
+          minstens 2/5 van het budget in website promotie te steken. Denk hierbij bijvoorbeeld aan google advertenties.
+        </p>
+        <p>
+          Je website hoeft niet in een keer volledig af te zijn. Als de fundering maar goed is. Daarna is het altijd mogelijk om je
+          website verder uit te breiden indien nodig.
+        </p>
+        <p>
+          Uitterraard zijn er nog veel dingen om hoger te scoren in Google en beter gevonden te worden. Een blog, nieuwe website uitbreidingen
+          en social media helpen allemaal om meer bezoekers te generen.
+        </p>
+      </div>
+      <div class="col-md-3">
+        <img alt="wordpress-website-image" class="img-fluid" src="../../../../../assets/images/budget.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-contact-page-coffee-hero></app-contact-page-coffee-hero>

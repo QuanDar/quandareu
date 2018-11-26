@@ -1,0 +1,21 @@
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+          
+.onderwerp{
+    padding-top: 15px;
+}
+
+agm-map {
+    height: 25vh;
+}
+  
+.bg-color {
+    background-color: rgb(245, 245, 245);
+}
+
+textarea {
+    height: 19.3vh;
+}

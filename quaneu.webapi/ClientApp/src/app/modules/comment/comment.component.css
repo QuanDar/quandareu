@@ -1,0 +1,79 @@
+.score {
+    float: right;
+    padding: 6px 13px;
+    border: 1px solid rgb(230, 230, 230);
+    background-color: #a5a5a5;
+    font-weight: 700;
+    color: whitesmoke !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(211, 211, 211, 0.384);
+}
+
+.score a {
+    padding-left: 10px;
+    font-size: 1.1rem;
+
+}
+
+.score div {
+    float: left;
+}
+
+.vote button {
+    border: 1px solid rgb(230, 230, 230);
+    padding: 5px;
+    font-size: 0.5rem;
+}
+
+.userThumbNail {
+    font-size: 2.5rem;
+}
+
+.userName{
+    padding-left: 15px;
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+.responseBody {
+    padding: 40px;
+    margin-top: 20px;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.responseBody p {
+    font-size: 0.9rem;
+}
+
+.responseBody:last-child{
+    margin-bottom: 20px;
+}
+
+.reply {
+    padding-left: 7%;
+}
+
+main {
+    padding-top:15px;
+}
+
+
+/* reageer */
+textarea {
+    width: 100%;
+    height: 25vh;
+}
+
+#response {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.responseBody footer {
+    padding-top: 20px;
+}
+
+#response footer button{
+    float: left;
+    margin-right: 5px;
+}

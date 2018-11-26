@@ -1,0 +1,76 @@
+
+/* Highlighting rules for nav menu items */
+li.link-active a,
+li.link-active a:hover,
+li.link-active a:focus {
+    background-color: #007bff;
+    color: white;
+}
+
+.main-nav{
+  background: var(--main-bg-color-dark) none repeat center top;
+}
+
+#nav-top {
+  height: 3vh;
+}
+
+#nav-top a{
+  font-size: 0.85rem;
+}
+
+#nav-bot {
+  height: 8vh;
+}
+
+#nav-bot .nav-link{
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+#nav-bot .navbar-brand {
+  font-size: 1.9rem;
+}
+
+#nav-top .nav-link {
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+/* Keep the nav menu independent of scrolling and on top of other items */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* only affix the top navbar on mobile */
+@media (max-width: 992px) {
+  #nav-top {
+    height: 6vh;
+  }
+  
+  
+  #nav-bot {
+    height: 0;
+    padding: 0;
+  }
+
+
+
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+    .navbar a {
+        /* If a menu item's text is too long, truncate it */
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

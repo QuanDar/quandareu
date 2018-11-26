@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-7" id="response">
+        <header>
+            <h3>Reageer</h3>
+        </header>
+        <main>
+            <textarea #commentText placeholder="Voer hier uw reactie in"></textarea>
+        </main>
+        <footer>
+            <button (click)="postCommentButtonClick(commentText.value)" class="btn btn-primary">
+                Plaats Reactie
+            </button>
+            <button [style.display]="isVisible ? 'block' : 'none'" #cancelReplyButton (click)="cancelReplyButtonClick()" class="btn btn-secondary">
+                Annuleer reageren op bericht
+            </button>
+        </footer>
+    </div>
+</div>
