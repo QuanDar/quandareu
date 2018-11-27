@@ -32,6 +32,6 @@ export class NewsletterComponent {
       return;
     }
 
-    alert('SUCCESS!! :-)\n\nIt is working but not doing anything' + JSON.stringify(this.newsetterForm.value.email))
+    alert('SUCCESS!! =)\n\nIt is working but not doing anything' + JSON.stringify(this.newsetterForm.value.email))
   }
 }
