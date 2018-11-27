@@ -8,3 +8,14 @@ C:\Users\QuanDar\source\repos\quaneu.webapi\quaneu.datalayer\obj\Debug\netcoreap
 C:\Users\QuanDar\source\repos\quaneu.webapi\quaneu.datalayer\obj\Debug\netcoreapp2.2\quaneu.datalayer.AssemblyInfo.cs
 C:\Users\QuanDar\source\repos\quaneu.webapi\quaneu.datalayer\obj\Debug\netcoreapp2.2\quaneu.datalayer.dll
 C:\Users\QuanDar\source\repos\quaneu.webapi\quaneu.datalayer\obj\Debug\netcoreapp2.2\quaneu.datalayer.pdb
+C:\Users\QuanDar\Documents\GitHub\quan_eu_web\quandareu\quaneu.datalayer\bin\Debug\netcoreapp2.2\quaneu.datalayer.deps.json
+C:\Users\QuanDar\Documents\GitHub\quan_eu_web\quandareu\quaneu.datalayer\bin\Debug\netcoreapp2.2\quaneu.datalayer.runtimeconfig.json
+C:\Users\QuanDar\Documents\GitHub\quan_eu_web\quandareu\quaneu.datalayer\bin\Debug\netcoreapp2.2\quaneu.datalayer.runtimeconfig.dev.json
+C:\Users\QuanDar\Documents\GitHub\quan_eu_web\quandareu\quaneu.datalayer\bin\Debug\netcoreapp2.2\quaneu.datalayer.dll
+C:\Users\QuanDar\Documents\GitHub\quan_eu_web\quandareu\quaneu.datalayer\bin\Debug\netcoreapp2.2\quaneu.datalayer.pdb
+C:\Users\QuanDar\Documents\GitHub\quan_eu_web\quandareu\quaneu.datalayer\obj\Debug\netcoreapp2.2\quaneu.datalayer.csprojAssemblyReference.cache
+C:\Users\QuanDar\Documents\GitHub\quan_eu_web\quandareu\quaneu.datalayer\obj\Debug\netcoreapp2.2\quaneu.datalayer.csproj.CoreCompileInputs.cache
+C:\Users\QuanDar\Documents\GitHub\quan_eu_web\quandareu\quaneu.datalayer\obj\Debug\netcoreapp2.2\quaneu.datalayer.AssemblyInfoInputs.cache
+C:\Users\QuanDar\Documents\GitHub\quan_eu_web\quandareu\quaneu.datalayer\obj\Debug\netcoreapp2.2\quaneu.datalayer.AssemblyInfo.cs
+C:\Users\QuanDar\Documents\GitHub\quan_eu_web\quandareu\quaneu.datalayer\obj\Debug\netcoreapp2.2\quaneu.datalayer.dll
+C:\Users\QuanDar\Documents\GitHub\quan_eu_web\quandareu\quaneu.datalayer\obj\Debug\netcoreapp2.2\quaneu.datalayer.pdb

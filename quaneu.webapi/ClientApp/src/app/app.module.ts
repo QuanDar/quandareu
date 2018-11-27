@@ -34,6 +34,7 @@ import { FrequentlyAskedQuestionsComponent } from './modules/frequently-asked-qu
 import { ThemesComponent } from './modules/themes/themes.component';
 import { WordpressComponent } from './modules/wordpress/wordpress.component';
 import { HomeComponent } from './modules/home/home.component';
+import { NewsletterComponent } from './shared/components/newsletter/newsletter.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -82,7 +83,8 @@ const appRoutes: Routes = [
     BreadcrumbsComponent,
     LoginFormComponent,
     RegisterFormComponent,
-    ProfileComponent
+    ProfileComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,

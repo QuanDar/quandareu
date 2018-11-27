@@ -1,0 +1,17 @@
+<section>
+    <h5>Gratis tips voor je website</h5>
+    <small>Uw email veilig opgeslagen en nooit gedeelt!</small>
+    <form [formGroup]="newsetterForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+                <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</section>
