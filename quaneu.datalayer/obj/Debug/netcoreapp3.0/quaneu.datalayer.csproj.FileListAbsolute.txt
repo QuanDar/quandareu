@@ -1,0 +1,7 @@
+C:\Users\royXD\source\repos\quandareu-master\quaneu.datalayer\obj\Debug\netcoreapp3.0\quaneu.datalayer.AssemblyInfoInputs.cache
+C:\Users\royXD\source\repos\quandareu-master\quaneu.datalayer\obj\Debug\netcoreapp3.0\quaneu.datalayer.AssemblyInfo.cs
+C:\Users\royXD\source\repos\quandareu-master\quaneu.datalayer\bin\Debug\netcoreapp3.0\quaneu.datalayer.deps.json
+C:\Users\royXD\source\repos\quandareu-master\quaneu.datalayer\bin\Debug\netcoreapp3.0\quaneu.datalayer.dll
+C:\Users\royXD\source\repos\quandareu-master\quaneu.datalayer\bin\Debug\netcoreapp3.0\quaneu.datalayer.pdb
+C:\Users\royXD\source\repos\quandareu-master\quaneu.datalayer\obj\Debug\netcoreapp3.0\quaneu.datalayer.dll
+C:\Users\royXD\source\repos\quandareu-master\quaneu.datalayer\obj\Debug\netcoreapp3.0\quaneu.datalayer.pdb

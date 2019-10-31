@@ -1,16 +1,15 @@
-using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using quaneu.datalayer;
 using quaneu.datalayer.Contracts;
@@ -19,7 +18,6 @@ using quaneu.datalayer.Repository;
 using quaneu.webapi.Factories.Authentication;
 using quaneu.webapi.Factories.Authentication.Helpers;
 using System;
-using AutoMapper;
 using System.Text;
 
 namespace quaneu.webapi
@@ -46,8 +44,6 @@ namespace quaneu.webapi
             {
                 configuration.RootPath = "ClientApp/dist";
             });
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             // DbContext setup
             var connection = @"Server=(localdb)\mssqllocaldb;Database=EFQuanEUDatabase.AspNetCore.NewDb;Trusted_Connection=True;ConnectRetryCount=0";
@@ -103,6 +99,9 @@ namespace quaneu.webapi
                 configureOptions.SaveToken = true;
             });
 
+            services.AddControllers();
+
+
             // api user claim policy
             services.AddAuthorization(options =>
             {
@@ -123,12 +122,10 @@ namespace quaneu.webapi
             builder = new IdentityBuilder(builder.UserType, typeof(IdentityRole), builder.Services);
             builder.AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
-            services.AddAutoMapper();
-            services.AddMvc().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -137,20 +134,21 @@ namespace quaneu.webapi
             else
             {
                 app.UseExceptionHandler("/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
-            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
-            app.UseDefaultFiles();
 
-            app.UseMvc(routes =>
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
             {
-                routes.MapRoute(
+                endpoints.MapControllerRoute(
                     name: "default",
-                    template: "{controller}/{action=Index}/{id?}");
+                    pattern: "{controller}/{action=Index}/{id?}");
             });
 
             app.UseSpa(spa =>
